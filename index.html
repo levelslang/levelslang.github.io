@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>
-		2 - Levels intepreter
+		1 - Levels intepreter
 		</title>
 	
 		<link rel="stylesheet" href="styles.css">
@@ -14,48 +14,54 @@
 		<p>Modify program options below, enter program levels, then click run to execute program</p>
 		<p>To use UTF-8 multibyte characters, copy paste from the code page next to the output box</p>
 
-		<div class="columns">
-			<form>
-				<label for="size">Size: </label>
-				<input type="number" id="size" name="size" min="1">
-			</form>
-			<form>
-				<label for="limit">Limit: </label>
-				<input type="number" id="limit" name="limit" min="1" value="1000000">
-			</form>
+		<div>
+			<div style="float:left">
+				<form>
+					<label for="size">Size: </label>
+					<input type="number" id="size" name="size" min="1">
+				</form>
+			</div>
+			<div style="float:left">
+				<form>
+					<label for="limit">Limit: </label>
+					<input type="number" id="limit" name="limit" min="1" value="1000000">
+				</form>
+			</div>
 		</div>
-		
-		<div class="columns">
-			    <form>
-			    	<label for="b">Repeat single level into cube</label>
-			    	<input type="checkbox" id="b" name="b" value="0"><br>
-				
-			    	<label for="d">Output debugging information</label>
-			    	<input type="checkbox" id="d" name="d" value="0"><br>
-				
-			    	<label for="e">Pad with empty levels</label>
-			    	<input type="checkbox" id="e" name="e" value="0"><br>
-				
-			    	<label for="j">Set IP delta</label>
-			    	<input type="checkbox" id="j" name="j" value="0"><br>
-				
-			    	<label for="o">Output a specified number of values</label>
-			    	<input type="checkbox" id="o" name="o" value="0"><br>
-				
-			    	<label for="r">Disable autopadding</label>
-			    	<input type="checkbox" id="r" name="r" value="0"><br>
-				
-			    	<label for="s">Set starting point</label>
-			    	<input type="checkbox" id="s" name="s" value="0"><br>
-				
-			    	<label for="x">Turn off implicit I/O</label>
-			    	<input type="checkbox" id="x" name="x" value="0"><br>
-				
-			    	<label for="xxd">Output hexdump at end of program</label>
-			    	<input type="checkbox" id="xxd" name="xxd" value="0"><br>
-			</form>
-			<div>
-				<label for="input">Input</label>
+		<br>
+		<div>
+			<div style="float:left">
+				<form>
+					<input type="checkbox" id="b" name="b" value="0"><br>
+					<label for="b">Repeat single level into cube</label>
+
+					<input type="checkbox" id="d" name="d" value="0"><br>
+					<label for="d">Output debugging information</label>
+
+					<input type="checkbox" id="e" name="e" value="0"><br>
+					<label for="e">Pad with empty levels</label>
+
+					<input type="checkbox" id="j" name="j" value="0"><br>
+					<label for="j">Set IP delta</label>
+
+					<input type="checkbox" id="o" name="o" value="0"><br>
+					<label for="o">Output a specified number of values</label>
+
+					<input type="checkbox" id="r" name="r" value="0"><br>
+					<label for="r">Disable autopadding</label>
+
+					<input type="checkbox" id="s" name="s" value="0"><br>
+					<label for="s">Set starting point</label>
+
+					<input type="checkbox" id="x" name="x" value="0"><br>
+					<label for="x">Turn off implicit I/O</label>
+
+					<input type="checkbox" id="xxd" name="xxd" value="0"><br>
+					<label for="xxd">Output hexdump at end of program</label>
+				</form>
+			</div>
+			<div style="float:left">
+				<label for="input">Input</label><br>
 				<textarea id="input" name="input" rows="9" cols="80"></textarea>
 			</div>
 		</div>
